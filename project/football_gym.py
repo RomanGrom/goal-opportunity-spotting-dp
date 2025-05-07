@@ -63,7 +63,6 @@ class FootballGym(gym.Env):
 
         total_reward = 0
         for _ in range(self.frame_skip):
-            # Vykonaj akciu na preskočenie frameov a pridaj reward
             obs, reward, done, info = self.env.step([19])
             total_reward += reward
 
@@ -73,10 +72,10 @@ class FootballGym(gym.Env):
         obs = np.moveaxis(obs, -1, 0)
 
         if self.n_step >= 1500:
-            done = True  # Ukončíme epizódu, keď skončí prvý polčas
+            done = True  # end episode when first half ends
 
         terminated = done
-        truncated = False  # Ak vaše prostredie nemá časové limity, nastavte na False
+        truncated = False
         
         return self._get_stacked_obs(obs), float(total_reward), terminated, truncated, info
 
@@ -87,24 +86,23 @@ class FootballGym(gym.Env):
     
     def _get_stacked_obs(self, obs):
 
-        # Rozdelenie posledného frame na R, G, B kanály
+        # Last frame to RGB channels
         r_last = obs[9]
         g_last = obs[10]
         b_last = obs[11]
 
-        # Konštantná šedá hodnota (napr. 128 pre strednú šedú)
+        # Base grey
         gray_base = 128
 
         grayscale_diffs = []
 
-        # Pridáme posledný frame do rozdielov (bude to posledný 3 kanál)
+        # Last frame to grayscale diffs
         grayscale_diffs.append(r_last[..., np.newaxis])  # R kanál
         grayscale_diffs.append(g_last[..., np.newaxis])  # G kanál
         grayscale_diffs.append(b_last[..., np.newaxis])  # B kanál
         
-        # Predchádzajúce snímky a ich rozdiely
+        # Last frames differences
         compare_frame = np.stack((r_last, g_last, b_last), axis=-1)
-        #compare_frame = np.dot(compare_frame[...,:3], [0.2989, 0.5870, 0.1140])
         compare_frame = cv2.cvtColor(compare_frame, cv2.COLOR_RGB2GRAY)
 
         for i in range(6, -1, -3):
@@ -113,14 +111,14 @@ class FootballGym(gym.Env):
             frame  = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
 
             diff = compare_frame.astype(np.int16) - frame.astype(np.int16)
-            diff = np.clip(diff + gray_base, 0, 255).astype(np.uint8)  # Uisti sa, že hodnoty sú v rozsahu 0-255
+            diff = np.clip(diff + gray_base, 0, 255).astype(np.uint8)
 
-            # Pridaj rozdiel do grayscale kanálu
-            grayscale_diffs.append(diff[..., np.newaxis])  # Pridaj novú dimenziu pre channel
+            # add difference
+            grayscale_diffs.append(diff[..., np.newaxis])
 
             compare_frame = frame
 
-        # Stack všetky rozdielové frames a posledný frame do jedného pozorovania
+        # stack all frames into one observattion
         stacked_obs = np.concatenate(grayscale_diffs, axis=-1)
         stacked_obs = np.transpose(stacked_obs, (2, 0, 1))
         
@@ -129,7 +127,7 @@ class FootballGym(gym.Env):
 
 
 
-# Funkcia na vytvorenie jednotlivého prostredia
+# Create environment
 def make_football_env(rank):
     def _init():
         env = Monitor(FootballGym())

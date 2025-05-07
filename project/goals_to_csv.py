@@ -7,28 +7,28 @@ from tqdm import tqdm
 from stable_baselines3 import PPO
 import csv
 
-# --- Vstupné premenné ---
+# --- Input parameters ---
 input_dirs = [Path(".scratch/actions_dataset/goal"), Path(".scratch/actions_dataset/kick-off")]
 output_file = ".scratch/all_predictions_goals.csv"
 model_path = ".scratch/last_model.zip"
 
 
-# Výstupný adresár pre prípadné snímky
+# outpur dir
 frames_output_dir = Path(".scratch/predictions_frames_simple")
 frames_output_dir.mkdir(parents=True, exist_ok=True)
 
-# Konštanty
+# constants
 stacked_frames = 4
 frame_skip = 2
 gray_base = 128
 
-# --- Načítanie modelu ---
+# --- Load the model ---
 def load_model(model_path):
     model = PPO.load(model_path)
     model.policy.set_training_mode(False)
     return model
 
-# --- Augmentácia ---
+# --- Augmentation ---
 def augment_frame(frame, sat=0.6, val=1, contrast=0.6, blur=4, noise_std=0.0):
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     hsv[..., 1] = np.clip(hsv[..., 1] * sat, 0, 255)
@@ -42,7 +42,7 @@ def augment_frame(frame, sat=0.6, val=1, contrast=0.6, blur=4, noise_std=0.0):
         frame = cv2.add(frame, noise)
     return frame
 
-# --- Spracovanie pozorovania ---
+# --- Process frame ---
 def process_frame(obs):
     stacked = np.concatenate([frame for frame in obs], axis=-1)
     obs = np.transpose(stacked, (2, 0, 1))
@@ -68,7 +68,7 @@ def process_frame(obs):
     stacked_obs = np.expand_dims(stacked_obs, axis=0)
     return stacked_obs
 
-# --- Hlavná funkcia --- 
+# --- Main function --- 
 def process_dataset(input_dirs, output_file, model):
     max_actions_per_type = 300
 
@@ -111,7 +111,7 @@ def process_dataset(input_dirs, output_file, model):
                 processed_matches += 1
 
 
-# --- Spustenie ---
+
 if __name__ == "__main__":
     model = load_model(model_path)
     process_dataset(input_dirs, output_file, model)

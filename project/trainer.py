@@ -11,11 +11,10 @@ from hydra.core.hydra_config import HydraConfig
 from custom_callback import *
 from custom_networks import *
 from football_gym import *
-from atari_gym import *
 
 
 
-# Definujte funkciu pre learning rate
+# Learning rate function
 def linear_schedule(initial_value):
     def func(progress_remaining):
         return progress_remaining * initial_value
@@ -40,11 +39,8 @@ class Trainer:
         # CUDA / CPU
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-        # Vytvorenie viacerých paralelných Atari prostredí pomocou SubprocVecEnv
+        # Paralel environments
         self.envs = SubprocVecEnv([make_football_env(0) for i in range(cfg.train.num_envs)])
-
-        # Zoskupenie snímok pre vizuálny vstup (bežné pre Atari hry)
-        #self.envs = VecFrameStack(self.envs, n_stack=4)
 
         self.model = None
 
@@ -54,7 +50,7 @@ class Trainer:
             net_arch=self.cfg.model.net_arch
         )
 
-        # Použitie vlastnej CNN politiky na vizuálny vstup
+        # Our cnn policy and hyperparameters
         self.model = PPO(CustomSharedCnnPolicy,
                          self.envs, verbose=2,
                          policy_kwargs=policy_kwargs,
@@ -82,7 +78,6 @@ class Trainer:
             deterministic=True,
             n_eval_episodes=1
         )
-        #print(self.model.policy)
         print(self.model.learning_rate)
 
         self.model.learn(self.cfg.train.total_timesteps, callback=eval_callback, progress_bar=True)

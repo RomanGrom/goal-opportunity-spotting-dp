@@ -6,7 +6,7 @@ import timm
 import torchvision.transforms as TVF
 import numpy as np
 
-# Vlastný extraktor vlastností pre CNN
+# Custom feature extractor
 class CustomCnnNetwork(BaseFeaturesExtractor):
     def __init__(self, observation_space, features_dim, which_model='vit'):
         super(CustomCnnNetwork, self).__init__(observation_space, features_dim=features_dim)
@@ -20,7 +20,7 @@ class CustomCnnNetwork(BaseFeaturesExtractor):
 
         self.flatten = nn.Flatten()
 
-        # Spoločná lineárna vrstva pre actor a critic hlavy
+        # ahared linear layer
         self.shared_fc = nn.Linear(384 * (self.model.patch_embed.num_patches), features_dim)
 
 
@@ -123,9 +123,9 @@ def layer_init(layer, std=np.sqrt(2), bias_const=0.0):
     return layer
 
 
+# which model to load
 def load_model(which):
     if which == 'resnet':
-        # Použitie ResNetu pre Space Invaders
         model = timm.create_model('resnet18', pretrained=True, features_only=True)
         model.fc = nn.Identity()
 

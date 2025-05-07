@@ -13,13 +13,13 @@ env = DummyVecEnv([lambda: make_football_env(0)()])
 model = PPO.load(".scratch/logs/only_AI/4/last_model.zip", env=env)
 model.policy.set_training_mode(False)
 
-# Otvorenie CSV súboru na zapisovanie hodnôt
+# open csv file for writing values
 with open(".scratch/gfootball_eval.csv", mode='w', newline='') as csvfile:
     writer = csv.writer(csvfile)
 
     goal_count = 0
 
-    # Prehranie hry pre požadovaný počet epizód
+    # play game
     while True:
         obs = env.reset()
         done = False
@@ -38,13 +38,13 @@ with open(".scratch/gfootball_eval.csv", mode='w', newline='') as csvfile:
                 print("zapisujem")
                 goal = 0
 
-            # Predikcia akcie modelom (deterministická pre evaluáciu)
+            # Deterministic action and value prediction
             action, _ = model.predict(obs, deterministic=True)
             output = model.policy.forward(model.policy.obs_to_tensor(obs)[0], deterministic=True, eval=True)
             value = output[1].item()  # Extrahovanie hodnoty stavu
             values.append(value)
 
-            # Prostredie vykoná akciu
+            # env step
             obs, reward, done, info = env.step(action)
 
             if abs(reward) == 1:
