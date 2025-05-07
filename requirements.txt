@@ -1,0 +1,13 @@
+pygame>=1.9.6
+opencv-python
+psutil
+numpy
+gym<=0.21.0
+absl-py
+wheel
+gfootball
+hydra-core
+stable-baselines3
+timm
+tqdm
+rich

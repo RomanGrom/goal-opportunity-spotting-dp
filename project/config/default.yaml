@@ -1,0 +1,36 @@
+hydra:
+  run:
+    dir: .scratch/logs/${exp.name}/${exp.ver}
+
+
+# Default groups
+defaults:
+  - _self_
+
+# Training hyperparameters
+train:
+  batch_size: 64
+  n_epochs: 2
+  lr: 0.000155
+  num_envs: 16
+  total_timesteps: 500000000
+  n_steps: 256
+  gamma: 0.97
+  ent_coef: 0.0
+  clip_range: 0.115
+  clip_range_vf: 0.115
+  max_grad_norm: 0.76
+  vf_coef: 1.0
+
+
+# Our model
+model:
+  model: vit
+  net_arch: [512, 256]
+
+
+# Experiment stuff
+exp:
+  name: default
+  ver: 0
+  id: ${.name}.${.ver}
