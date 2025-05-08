@@ -1,0 +1,138 @@
+{
+    "gameName": "2015-04-14 - 21-45 Atl. Madrid 0 - 0 Real Madrid",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "00:25",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "01:47",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "02:59",
+            "label": "chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "05:52",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "08:13",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "09:41",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "11:14",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "35:57",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "38:56",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "39:52",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "42:09",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "42:50",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "44:24",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "03:42",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "07:54",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "11:15",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "15:18",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "22:22",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "38:36",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        }
+    ]
+}

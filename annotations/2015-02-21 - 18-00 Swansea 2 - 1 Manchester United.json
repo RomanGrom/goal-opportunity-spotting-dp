@@ -1,0 +1,117 @@
+{
+    "gameName": "2015-02-21 - 18-00 Swansea 2 - 1 Manchester United",
+    "annotations": [
+      {
+        "half": 1,
+        "gameTime": "04:16",
+        "label": "chance",
+        "side": "left",
+        "bool": true
+      },
+      {
+        "half": 1,
+        "gameTime": "05:54",
+        "label": "no_chance",
+        "side": "left",
+        "bool": false
+      },
+      {
+        "half": 1,
+        "gameTime": "10:13",
+        "label": "chance",
+        "side": "left",
+        "bool": false
+      },
+      {
+        "half": 1,
+        "gameTime": "14:59",
+        "label": "chance",
+        "side": "right",
+        "bool": false
+      },
+      {
+        "half": 1,
+        "gameTime": "16:19",
+        "label": "chance",
+        "side": "left",
+        "bool": false
+      },
+      {
+        "half": 1,
+        "gameTime": "17:30",
+        "label": "no_chance",
+        "side": "left",
+        "bool": false
+      },
+      {
+        "half": 1,
+        "gameTime": "19:26",
+        "label": "no_chance",
+        "side": "left",
+        "bool": false
+      },
+      {
+        "half": 1,
+        "gameTime": "19:52",
+        "label": "chance",
+        "side": "right",
+        "bool": false
+      },
+      {
+        "half": 1,
+        "gameTime": "20:17",
+        "label": "no_chance",
+        "side": "left",
+        "bool": true
+      },
+      {
+        "half": 1,
+        "gameTime": "24:47",
+        "label": "no_chance",
+        "side": "right",
+        "bool": false
+      },
+      {
+        "half": 1,
+        "gameTime": "25:03",
+        "label": "no_chance",
+        "side": "left",
+        "bool": true
+      },
+      {
+        "half": 1,
+        "gameTime": "37:16",
+        "label": "chance",
+        "side": "right",
+        "bool": false
+      },
+      {
+        "half": 2,
+        "gameTime": "19:50",
+        "label": "chance",
+        "side": "left",
+        "bool": false
+      },
+      {
+        "half": 2,
+        "gameTime": "35:08",
+        "label": "no_chance",
+        "side": "left",
+        "bool": true
+      },
+      {
+        "half": 2,
+        "gameTime": "40:22",
+        "label": "chance",
+        "side": "right",
+        "bool": false
+      },
+      {
+        "half": 2,
+        "gameTime": "41:54",
+        "label": "no_chance",
+        "side": "left",
+        "bool": false
+      }
+    ]
+}

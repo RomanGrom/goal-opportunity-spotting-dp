@@ -1,0 +1,236 @@
+{
+    "gameName": "2015-10-20 - 21-45 Arsenal 2 - 0 Bayern Munich",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "02:24",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "04:44",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "06:26",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "06:40",
+            "label": "chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "08:02",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "10:43",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "12:42",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "22:03",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "27:46",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "29:59",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "31:19",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "31:40",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "32:43",
+            "label": "chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "36:55",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "37:20",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "37:44",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "41:45",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "43:36",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "04:15",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "08:55",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "09:42",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "10:10",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "12:54",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "18:54",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "23:09",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "23:30",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "24:26",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "25:59",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "29:13",
+            "label": "chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "33:20",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "43:55",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "44:48",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "48:08",
+            "label": "chance",
+            "side": "left",
+            "bool": true
+        }
+    ]
+}

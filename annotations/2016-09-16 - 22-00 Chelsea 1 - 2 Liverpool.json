@@ -1,0 +1,82 @@
+{
+    "gameName": "2016-09-16 - 22-00 Chelsea 1 - 2 Liverpool",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "01:42",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "02:57",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "04:50",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "07:00",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "09:20",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "09:40",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "10:43",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "33:26",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "06:40",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "19:33",
+            "label": "chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "33:42",
+            "label": "chance",
+            "side": "left",
+            "bool": true
+        }
+    ]
+}

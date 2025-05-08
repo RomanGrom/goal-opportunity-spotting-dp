@@ -1,0 +1,102 @@
+{
+    "gameName": "2015-03-10 - 22-45 FC Porto 4 - 0 Basel",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "00:24",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "32:40",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "34:52",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "35:40",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "41:00",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },{
+            "half": 1,
+            "gameTime": "41:13",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "43:00",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "43:12",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "44:20",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "14:42",
+            "label": "chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "16:10",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "36:21",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "42:23",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "44:39",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        }
+    ]
+}

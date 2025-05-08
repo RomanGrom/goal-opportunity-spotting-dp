@@ -1,0 +1,117 @@
+{
+    "gameName": "2015-09-15 - 21-45 Manchester City 1 - 2 Juventus",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "01:48",
+            "label": "chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "06:18",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "09:40",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "13:18",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "17:14",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "31:24",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "33:27",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "39:37",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "04:23",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "05:46",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "14:00",
+            "label": "chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "16:02",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "16:51",
+            "label": "chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "20:43",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "22:11",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "42:37",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        }
+    ]
+}

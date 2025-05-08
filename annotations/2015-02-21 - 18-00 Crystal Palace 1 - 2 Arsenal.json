@@ -1,0 +1,82 @@
+{
+    "gameName": "2015-02-21 - 18-00 Crystal Palace 1 - 2 Arsenal",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "18:09",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "17:08",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "05:44",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "07:13",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "08:03",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "11:16",
+            "label": "chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "15:00",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "23:38",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "24:06",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "25:58",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "37:38",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        }
+    ]
+}

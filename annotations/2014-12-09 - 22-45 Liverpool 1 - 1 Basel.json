@@ -1,0 +1,47 @@
+{
+    "gameName": "2014-12-09 - 22-45 Liverpool 1 - 1 Basel",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "22:03",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "27:31",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "32:17",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "33:47",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "04:42",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "13:26",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "gameName": "2015-04-05 - 22-00 Marseille 2 - 3 Paris SG",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "01:57",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "10:56",
+            "label": "chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "27:49",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "39:17",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "01:55",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "05:18",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "gameName": "2015-02-17 - 22-45 Shakhtar Donetsk 0 - 0 Bayern Munich",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "01:35",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "04:48",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "10:11",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "14:02",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 1,
+            "gameTime": "30:42",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "34:32",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "05:56",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        }
+    ]
+}

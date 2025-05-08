@@ -1,0 +1,103 @@
+{
+  "gameName": "2015-02-21 - 18-00 Chelsea 1 - 1 Burnley",
+  "annotations": [
+    {
+      "half": 1,
+      "gameTime": "04:31",
+      "label": "chance",
+      "side": "left",
+      "bool": false
+    },
+    {
+      "half": 1,
+      "gameTime": "14:29",
+      "label": "chance",
+      "side": "left",
+      "bool": false
+    },
+    {
+      "half": 1,
+      "gameTime": "19:13",
+      "label": "no_chance",
+      "side": "right",
+      "bool": false
+    },
+    {
+      "half": 1,
+      "gameTime": "25:15",
+      "label": "chance",
+      "side": "right",
+      "bool": false
+    },
+    {
+      "half": 1,
+      "gameTime": "26:58",
+      "label": "no_chance",
+      "side": "left",
+      "bool": false
+    },
+    {
+      "half": 1,
+      "gameTime": "43:15",
+      "label": "no_chance",
+      "side": "right",
+      "bool": false
+    },
+    {
+      "half": 2,
+      "gameTime": "01:41",
+      "label": "no_chance",
+      "side": "right",
+      "bool": true
+    },
+    {
+      "half": 2,
+      "gameTime": "09:21",
+      "label": "chance",
+      "side": "right",
+      "bool": false
+    },
+    {
+      "half": 2,
+      "gameTime": "12:29",
+      "label": "chance",
+      "side": "right",
+      "bool": false
+    },
+    {
+      "half": 2,
+      "gameTime": "32:58",
+      "label": "chance",
+      "side": "right",
+      "bool": false
+    },
+    {
+      "half": 2,
+      "gameTime": "34:03",
+      "label": "no_chance",
+      "side": "left",
+      "bool": true
+    },
+    {
+      "half": 2,
+      "gameTime": "34:37",
+      "label": "chance",
+      "side": "left",
+      "bool": true
+    },
+    {
+      "half": 2,
+      "gameTime": "38:34",
+      "label": "no_chance",
+      "side": "right",
+      "bool": false
+    },
+    {
+      "half": 2,
+      "gameTime": "41:03",
+      "label": "no_chance",
+      "side": "right",
+      "bool": false
+    }
+  ]
+}

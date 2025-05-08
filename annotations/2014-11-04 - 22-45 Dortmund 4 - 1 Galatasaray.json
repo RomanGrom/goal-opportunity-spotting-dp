@@ -1,0 +1,47 @@
+{
+    "gameName": "2014-11-04 - 22-45 Dortmund 4 - 1 Galatasaray",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "08:33",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "13:59",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "24:09",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+        },
+        {
+            "half": 1,
+            "gameTime": "26:55",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        },
+        {
+            "half": 2,
+            "gameTime": "05:06",
+            "label": "no_chance",
+            "side": "left",
+            "bool": true
+        },
+        {
+            "half": 2,
+            "gameTime": "37:09",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+        }
+    ]
+}

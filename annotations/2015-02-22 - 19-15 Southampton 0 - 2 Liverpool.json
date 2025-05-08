@@ -1,0 +1,82 @@
+{
+    "gameName": "2015-02-22 - 19-15 Southampton 0 - 2 Liverpool",
+    "annotations": [
+        {
+            "half": 1,
+            "gameTime": "03:34",
+            "label": "chance",
+            "side": "left",
+            "bool": true
+          },
+          {
+            "half": 1,
+            "gameTime": "07:21",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+          },
+          {
+            "half": 1,
+            "gameTime": "15:27",
+            "label": "no_chance",
+            "side": "left",
+            "bool": false
+          },
+          {
+            "half": 1,
+            "gameTime": "23:28",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+          },
+          {
+            "half": 1,
+            "gameTime": "33:11",
+            "label": "no_chance",
+            "side": "right",
+            "bool": true
+          },
+          {
+            "half": 2,
+            "gameTime": "25:45",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+          },
+          {
+            "half": 2,
+            "gameTime": "33:01",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+          },
+          {
+            "half": 2,
+            "gameTime": "41:12",
+            "label": "chance",
+            "side": "left",
+            "bool": true
+          },
+          {
+            "half": 2,
+            "gameTime": "41:42",
+            "label": "no_chance",
+            "side": "right",
+            "bool": false
+          },
+          {
+            "half": 2,
+            "gameTime": "44:21",
+            "label": "chance",
+            "side": "right",
+            "bool": false
+          },
+          {
+            "half": 2,
+            "gameTime": "45:21",
+            "label": "chance",
+            "side": "left",
+            "bool": false
+          }
+    ]
+}
