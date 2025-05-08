@@ -1,5 +1,11 @@
-# Some Title
+# Goal Opportunity Spotting (Master's Thesis)
 
-This is a generated ReadME file
+This project focuses on detecting goal opportunities in football matches by analyzing data from motion sensors.
 
-# goal-opportunity-spotting-dp
+### Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/RomanGrom/goal-opportunity-spotting-dp.git
+   cd goal-opportunity-spotting-dp
