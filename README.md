@@ -1,5 +1,7 @@
 # Goal Opportunity Spotting (Master's Thesis)
+
 Reg. No.: FIIT-182905-102924
+
 This project focuses on detecting goal opportunities in football matches.
 
 ### Instructions
