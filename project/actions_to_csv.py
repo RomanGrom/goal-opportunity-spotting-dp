@@ -18,10 +18,10 @@ input_dirs = [Path(p) for p in [".scratch/chances_dataset/chance/right/true",
                                 ]]
 
 # Output csv file
-output_file = ".scratch/final_onlyai_7_blur7.csv"
+output_file = ".scratch/final_onlyai6_blur9.csv"
 
 # Path to the model
-model_path = ".scratch/logs/only_AI/7/last_model.zip"
+model_path = ".scratch/logs/only_AI/6/last_model.zip"
 
 
 # Constants
@@ -37,7 +37,7 @@ def load_model(model_path):
     return model
 
 # --- Augmentation ---
-def augment_frame(frame, sat=0.6, val=1, contrast=0.6, blur=3, noise_std=0.0):
+def augment_frame(frame, sat=0.6, val=1, contrast=0.6, blur=4, noise_std=0.0):
     # 1. Adjust saturation and brightness using HSV
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     hsv[..., 1] = np.clip(hsv[..., 1] * sat, 0, 255)  # Saturation
@@ -50,8 +50,8 @@ def augment_frame(frame, sat=0.6, val=1, contrast=0.6, blur=3, noise_std=0.0):
 
     # 3. Apply Gaussian blur
     if blur > 0:
-        frame = cv2.GaussianBlur(frame, (2 * blur + 1, 2 * blur + 1), 0)
-        # frame = cv2.GaussianBlur(frame, (5, 5), 0)
+        #frame = cv2.GaussianBlur(frame, (2 * blur + 1, 2 * blur + 1), 0)
+        frame = cv2.GaussianBlur(frame, (9, 9), 0)
 
     # 4. Add noise
     if noise_std > 0:
@@ -130,12 +130,12 @@ def process_dataset(input_dirs, output_file, model):
                         frame = cv2.imread(str(frames[idx]))
                         frame = cv2.resize(frame, (224, 224))
                         frame_aug = augment_frame(frame)
-                        frame_flip = flip_frame(frame_aug)
+                        #frame_flip = flip_frame(frame_aug)
                         stacked_obs.append(frame_aug)
-                        stacked_obs_flipped.append(frame_flip)
+                        #stacked_obs_flipped.append(frame_flip)
 
                     obs_normal = process_frame(stacked_obs)
-                    obs_flipped = process_frame(stacked_obs_flipped)
+                    #obs_flipped = process_frame(stacked_obs_flipped)
 
                     # Normal observation
                     output = model.policy.forward(model.policy.obs_to_tensor(obs_normal)[0], deterministic=True, eval=True)
@@ -143,9 +143,9 @@ def process_dataset(input_dirs, output_file, model):
                     action_probs = dist.distribution.probs.cpu().detach().numpy().flatten()
 
                     # Flipped observation
-                    output_f = model.policy.forward(model.policy.obs_to_tensor(obs_flipped)[0], deterministic=True, eval=True)
-                    dist_f, value_f = output_f[3], output_f[1].item()
-                    action_probs_f = dist_f.distribution.probs.cpu().detach().numpy().flatten()
+                    #output_f = model.policy.forward(model.policy.obs_to_tensor(obs_flipped)[0], deterministic=True, eval=True)
+                    #dist_f, value_f = output_f[3], output_f[1].item()
+                    #action_probs_f = dist_f.distribution.probs.cpu().detach().numpy().flatten()
 
                     # Write to CSV
                     # --- Extract info from input path ---
@@ -159,7 +159,7 @@ def process_dataset(input_dirs, output_file, model):
 
                     # --- Write row to CSV ---
                     csv_writer.writerow([
-                        filename, i, chance, side, label, round(value, 5), round(value_f, 5)
+                        filename, i, chance, side, label, round(value, 5), round(value, 5)
                     ])
 
                 action_id += 1

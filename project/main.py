@@ -11,7 +11,7 @@ def do_main(cfg: DictConfig):
 
     trainer = Trainer(cfg)
     trainer.setup()
-    trainer.load_model(".scratch/logs/only_AI/6/last_model.zip")
+    trainer.load_model(".scratch/logs/only_AI/2/last_model.zip")
     trainer.train()
 
 
