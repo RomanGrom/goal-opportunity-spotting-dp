@@ -21,7 +21,7 @@ This project focuses on detecting goal opportunities in football matches.
 
 ### Reproducing results
 
-1. The models are stored on the school NFS at `nfs-data/public/xgromr/models`, and the dataset is stored as `chances_dataset.tar` on `nfs-data/public/xgromr`. You need to untar the dataset first:
+1. The models are stored on the school NFS at `/mnt/nfs-data/public/xgromr/models`, and the dataset is stored as `chances_dataset.tar` on `/mnt/nfs-data/public/xgromr`. You need to untar the dataset first:
 
    ```bash
    tar -xvf chances_dataset.tar
