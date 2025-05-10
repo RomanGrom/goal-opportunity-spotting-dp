@@ -44,6 +44,11 @@ This project focuses on detecting goal opportunities in football matches.
 4. **onlyai_6.zip** - This model is from the "Only AI critic with lower discount factor" chapter.
 
 
+### Training
+
+For the football environment to run on GPU, the Xorg server must run on DISPLAY 0. Otherwise, unset the DISPLAY variable and run on the CPU.
+
+
 ### Other Files
 
 1. **project/main.py** - Script for running the training process.
