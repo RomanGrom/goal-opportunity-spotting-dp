@@ -46,7 +46,7 @@ This project focuses on detecting goal opportunities in football matches.
 
 ### Training
 
-For the football environment to run on GPU, the Xorg server must run on DISPLAY 0. Otherwise, unset the DISPLAY variable and run on the CPU.
+For the Gfootball environment to run on a GPU, the Xorg server must run on DISPLAY 0. Otherwise, unset the DISPLAY variable and run on the CPU.
 
 
 ### Other Files
