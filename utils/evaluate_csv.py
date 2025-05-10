@@ -89,10 +89,10 @@ def find_threshold_equal_fpr_fnr(df_scores, score_column):
 
     print(f"\n=== {score_column.upper()} ===")
     print(f"Threshold (FPR ≈ FNR): {best_threshold:.3f}")
-    print(f"Accuracy:  {acc:.3f}")
-    print(f"Precision: {prec:.3f}")
-    print(f"Recall:    {rec:.3f}")
-    print(f"F1 score:  {f1:.3f}")
+    print(f"Accuracy:  {acc:.4f}")
+    print(f"Precision: {prec:.4f}")
+    print(f"Recall:    {rec:.4f}")
+    print(f"F1 score:  {f1:.4f}")
 
 
 
