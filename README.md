@@ -71,13 +71,3 @@ For the Gfootball environment to run on a GPU, the Xorg server must run on DISPL
 
 
 
-
-
-
-
-
-<<<<<<< HEAD
-Reg. No.: FIIT-182905-102924
-=======
->>>>>>> 93b96fabd187eb522b3bc9245dcc342585893425
-
