@@ -26,4 +26,8 @@ RUN pip install setuptools==58.0.4
 
 RUN pip install -r requirements.txt
 
+RUN pip install --upgrade typing_extensions
+RUN pip install fastdtw
+RUN pip install scikit-learn
+
 WORKDIR /workspace/goal_spotting
