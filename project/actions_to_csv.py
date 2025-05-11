@@ -7,21 +7,21 @@ from stable_baselines3 import PPO
 import csv
 
 # --- Input variables ---
-input_dirs = [Path(p) for p in [".scratch/chances_dataset/chance/right/true",
-                                ".scratch/chances_dataset/chance/right/false",
-                                ".scratch/chances_dataset/chance/left/true",
-                                ".scratch/chances_dataset/chance/left/false",
-                                ".scratch/chances_dataset/no_chance/right/true",
+input_dirs = [Path(p) for p in [#".scratch/chances_dataset/chance/right/true",
+                                #".scratch/chances_dataset/chance/right/false",
+                                #".scratch/chances_dataset/chance/left/true",
+                                #".scratch/chances_dataset/chance/left/false",
+                                #".scratch/chances_dataset/no_chance/right/true",
                                 ".scratch/chances_dataset/no_chance/right/false",
                                 ".scratch/chances_dataset/no_chance/left/true",
                                 ".scratch/chances_dataset/no_chance/left/false"
                                 ]]
 
 # Output csv file
-output_file = ".scratch/final_onlyai6_blur9.csv"
+output_file = ".scratch/test.csv"
 
 # Path to the model
-model_path = ".scratch/logs/only_AI/6/last_model.zip"
+model_path = ".scratch/logs/only_AI/1/last_model.zip"
 
 
 # Constants
@@ -136,6 +136,11 @@ def process_dataset(input_dirs, output_file, model):
 
                     obs_normal = process_frame(stacked_obs)
                     #obs_flipped = process_frame(stacked_obs_flipped)
+
+
+                    np.save("data/chance_frame.npy", obs_normal)   
+
+
 
                     # Normal observation
                     output = model.policy.forward(model.policy.obs_to_tensor(obs_normal)[0], deterministic=True, eval=True)
