@@ -66,7 +66,9 @@ For the Gfootball environment to run on a GPU, the Xorg server must run on DISPL
 
 
 
+### Paper
 
+[goal_opportunities_spotting_paper.pdf](goal_opportunities_spotting_paper.pdf)
 
 
 
